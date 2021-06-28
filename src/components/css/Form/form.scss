@@ -4,4 +4,24 @@ form {
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
+  input {
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    border: 1px solid black;
+  }
+  .add-btn {
+    margin-left: 20px;
+    padding: 5px 50px;
+    border-radius: 10px;
+    background: #29296d;
+    color: white;
+    font-size: 18px;
+    border: #8353f9;
+    cursor: pointer;
+  }
+  .add-btn:hover{
+    background: #8353f9!important;
+    box-shadow: 0 4px 4px rgba(0,0,0,.05)!important;
+  }
 }

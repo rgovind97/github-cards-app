@@ -20,7 +20,7 @@ class Form extends React.Component {
           placeholder="GitHub username"
           required
         />
-        <button>Add card</button>
+        <button className="add-btn">Add card</button>
     	</form>
     );
   }

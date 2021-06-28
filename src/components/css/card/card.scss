@@ -1,5 +1,7 @@
 .github-profile {
-	margin: 1rem;
+	margin: 1.5rem 0rem;
+  background: ghostwhite;
+  padding: 20px;
   img {
     width: 75px;
     vertical-align: middle;
@@ -13,6 +15,16 @@
     }
   }
   .delete {
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: #8353f9;
+    color: white;
+    border: #8353f9;
     float: right;
+    cursor: pointer;
+  }
+  .delete:hover{
+    background: #29296d!important;
+    box-shadow: 0 4px 4px rgba(0,0,0,.05)!important;
   }
 }
