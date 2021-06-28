@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.scss';
+import Form from './components/form.jsx'
+import CardList from './components/cardList.jsx'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    profiles: [],
+  };
+  addNewProfile = (profileData) => {
+  	this.setState(prevState => ({
+    	profiles: [...prevState.profiles, profileData],
+    }));
+  };
+  deleteNewProfile = (profileData) => {
+    const deletedProfile = this.state.profiles.splice(this.state.profiles.findIndex(obj => obj.id === parseInt(profileData.id)),1)
+  	this.setState(prevState => ({
+    	profiles: prevState.profiles
+    }));
+  };
+	render() {
+  	return (
+    	<div className="wrapper">
+    	  <div className="header">{this.props.title}</div>
+        <Form onSubmit={this.addNewProfile} />
+        <CardList deleteCard={this.deleteNewProfile} profiles={this.state.profiles} />
+    	</div>
+    );
+  }
 }
 
 export default App;

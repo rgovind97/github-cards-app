@@ -1,0 +1,18 @@
+.github-profile {
+	margin: 1rem;
+  img {
+    width: 75px;
+    vertical-align: middle;
+  }
+  .info {
+    display: inline-block;
+    margin-left: 12px;
+		.name {
+    	font-size: 1.25rem;
+      font-weight: bold;
+    }
+  }
+  .delete {
+    float: right;
+  }
+}
