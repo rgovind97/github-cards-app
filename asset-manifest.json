@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/github-cards-react-app/static/css/main.ba0a4947.chunk.css",
+    "main.js": "/github-cards-react-app/static/js/main.d802b71f.chunk.js",
+    "main.js.map": "/github-cards-react-app/static/js/main.d802b71f.chunk.js.map",
+    "runtime-main.js": "/github-cards-react-app/static/js/runtime-main.0d3e324a.js",
+    "runtime-main.js.map": "/github-cards-react-app/static/js/runtime-main.0d3e324a.js.map",
+    "static/js/2.66c9351b.chunk.js": "/github-cards-react-app/static/js/2.66c9351b.chunk.js",
+    "static/js/2.66c9351b.chunk.js.map": "/github-cards-react-app/static/js/2.66c9351b.chunk.js.map",
+    "static/js/3.93b569c8.chunk.js": "/github-cards-react-app/static/js/3.93b569c8.chunk.js",
+    "static/js/3.93b569c8.chunk.js.map": "/github-cards-react-app/static/js/3.93b569c8.chunk.js.map",
+    "index.html": "/github-cards-react-app/index.html",
+    "static/css/main.ba0a4947.chunk.css.map": "/github-cards-react-app/static/css/main.ba0a4947.chunk.css.map",
+    "static/js/2.66c9351b.chunk.js.LICENSE.txt": "/github-cards-react-app/static/js/2.66c9351b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0d3e324a.js",
+    "static/js/2.66c9351b.chunk.js",
+    "static/css/main.ba0a4947.chunk.css",
+    "static/js/main.d802b71f.chunk.js"
+  ]
+}
