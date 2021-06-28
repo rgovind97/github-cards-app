@@ -8,12 +8,18 @@ class App extends React.Component {
     profiles: [],
   };
   addNewProfile = (profileData) => {
+    if (!this.state.profiles.find(obj => obj.id === profileData.id))
+    {
   	this.setState(prevState => ({
     	profiles: [...prevState.profiles, profileData],
     }));
+    }
+    else {
+      alert('User already added!!')
+    }
   };
   deleteNewProfile = (profileData) => {
-    const deletedProfile = this.state.profiles.splice(this.state.profiles.findIndex(obj => obj.id === parseInt(profileData.id)),1)
+    this.state.profiles.splice(this.state.profiles.findIndex(obj => obj.id === parseInt(profileData.id)),1)
   	this.setState(prevState => ({
     	profiles: prevState.profiles
     }));
